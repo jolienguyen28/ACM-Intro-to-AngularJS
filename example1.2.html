@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bankApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Bank App</title>
+</head>
+<body ng-controller="balancesController">
+    <h2>User Balances</h2>
+    <!-- ng-repeat iterate through users-->
+    <ul>
+        <li ng-repeat="user in users">
+            {{user.name}}: ${{user.balance}}
+            <button ng-click="remove(user)">Remove</button>
+        </li>
+    </ul>
+
+    <!-- Including AngularJS library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <!-- Including the custom AngularJS script -->
+    <script src="app.js"></script>
+</body>
+</html>

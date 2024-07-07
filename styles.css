@@ -1,0 +1,108 @@
+/* You can add global styles to this file, and also import other style files */
+/* CSS file for bank app with blue palette */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Container */
+#bankAppContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* List Styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+/* Columns */
+.user-info {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.user-actions {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Buttons */
+button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Links */
+a {
+  color: #007bff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Input Fields */
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccd0d5;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-size: 14px;
+  width: calc(50% - 12px);
+}
+
+/* Current User Section */
+#currentUserSection {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #e9f4ff;
+  border-radius: 4px;
+  border: 1px solid #cce0ff;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Add New User Section */
+#addNewUserSection {
+  margin-top: 20px;
+  text-align: center;
+}
