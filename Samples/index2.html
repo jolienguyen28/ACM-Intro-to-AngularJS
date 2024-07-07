@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank App</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+  <script src="main2.js"></script>
+</head>
+<body ng-app="bankApp">
+  <div id="bankAppContainer" ng-controller="balancesController">
+    <ul>
+      <li ng-repeat="user in users | orderBy: 'name'">
+        <div class="user-info">
+          <span>{{user.name}}</span>
+          <span>{{user.balance | currency}}</span>
+        </div>
+        <div class="user-actions">
+          <a href="#" ng-click="remove(user)">Delete</a>
+          <a href="#" ng-click="edit(user)">Edit</a>
+        </div>
+      </li>
+    </ul>
+    <div id="currentUserSection">
+      <input type="text" id="name" ng-model="current.name" placeholder="Name"/>
+      <input type="text" id="balance" ng-model="current.balance" placeholder="Balance"/>
+      <button ng-click="save(current)">Save changes</button>
+    </div>
+    <div id="addNewUserSection">
+      <button ng-click="addNew(current)">Add new user</button>
+    </div>
+  </div>
+</body>
+</html>
