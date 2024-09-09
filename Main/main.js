@@ -9,12 +9,22 @@ app.controller("balancesController", ['$scope', function ($scope) {
     ];
 
     //current object to hold the current user
-
+    $scope.current = {};
     //addNew function to add a new user
-
+    $scope.addNew = function(current){
+        
+    }
     //remove function to remove a user
-
+    $scope.remove = function(user){
+        
+    }
     //edit function to edit a user
+    $scope.edit = function(user){
+        
+    }
 
     //save function to save a user
+    $scope.save = function(){
+        
+    }
 }]);
